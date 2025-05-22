@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var food = new Array();
+        food[0] = "Pizza";
+        food[1] = "Burger";
+        food[2] = "Pasta";
+        food[3] = "Ice Cream";
+
+        // Correct way to use splice on an array, not an object
+        food.splice(1, 2); // Removes "Burger" and "Pasta"
+
+        console.log(food); // Output: ["Pizza", "Ice Cream"]
+
+        // If you want to use an array for fruits:
+        var fruit = ["Apple", "Banana", "Mango", "Orange"];
+        fruit.push("Grapes"); // Adds "Grapes" to the end of the array
+        fruit.splice(1, 2,"pol","kakaw"); // Removes "Banana" and "Mango"
+        console.log(fruit); // Output: ["Apple", "Orange"]
+    </script>
+</body>
+</html>

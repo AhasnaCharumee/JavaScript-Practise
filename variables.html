@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in JavaScript</title>
+</head>
+<body>
+            <input type="text/javascript" id="text" >
+            <button id="btn">Click Me</button>
+            <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates amet sequi corrupti asperiores, vel quia aut praesentium voluptatibus, reprehenderit eos quam! Rerum fugiat labore accusamus ipsa suscipit corporis dolorem!</p>
+
+    <script type="text/JavaScript">
+
+        // var x = 10;
+        // x = 23;
+        // alert (x);
+
+        // var name = "John Doe";
+
+        document.getElementById("btn").onclick = function() {
+          var textEntered = "";
+          textEntered = document.getElementById("text").value;
+          document.getElementById("para").innerHTML = "Hello" + "" + textEntered;
+        }
+         
+
+
+
+    </script>
+</body>
+</html>

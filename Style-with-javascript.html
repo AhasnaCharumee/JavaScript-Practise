@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style with javascript</title>
+</head>
+<body>
+    <p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima fugit nesciunt iure suscipit aperiam quo enim vero incidunt, esse autem!</p>
+    <button id="btn">style change</button>
+
+    <button id="btn2">Input</button>
+    <button id="btn3">HIde</button>
+
+    <script type="text/javascript">
+    document.getElementById("btn").onclick = function(){
+        document.getElementById("text").style.color = "red";
+    }
+    document.getElementById("btn2").onclick = function(){
+        document.getElementById("text").style.fontSize = "80px";
+    }
+     document.getElementById("btn3").onclick = function(){
+        document.getElementById("text").style.display = "none";
+    }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Elements JavaScript</title>
+</head>
+<body>
+    <p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima fugit nesciunt iure suscipit aperiam quo enim vero incidunt, esse autem!</p>
+    <button id="btn">Click me</button>
+
+    <p id="text2"></p>
+    <button id="btn2">Input</button>
+
+
+    <script type="text/javascript">
+        document.getElementById("text").innerHTML = "Hello World!";
+        
+        // Response to a Click JavaScript 
+        document.getElementById("btn").onclick = function() {
+            document.getElementById("text").innerHTML = "You clicked the button!";
+        };
+        //Change web content JavaScript
+ document.getElementById("btn2").onclick = function() {
+            document.getElementById("text2").innerHTML ="A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.";
+        };
+
+    </script>
+</body>
+</html>
